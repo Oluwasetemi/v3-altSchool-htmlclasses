@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning about Tables</title>
+</head>
+
+<body>
+  <style>
+   table, tr > * {
+      border: 1px solid;
+    }
+  </style>
+
+  <!-- Tables -->
+  <table>
+    <!-- caption, colgroup, thead(tr, td, th), tbody(tr, td, th), tfoot(tr, td, th),  -->
+    <caption>A table showing the name and age of altschool students</caption>
+    <thead>
+      <tr>
+        <th>NameXXXXXXXXXXXXX</th>
+        <th>Age</th>
+      </tr>
+    </thead> <!-- role  -->
+    <tbody>
+      <tr>
+        <td>Setemi Ojo</td>
+        <td>99</td>
+      </tr>
+      <tr>
+        <td>Setemi Ojo</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Tabby</td>
+        <td>19</td>
+      </tr>
+      <tr>
+        <td>Jerry</td>
+        <td>190</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>
+          &copy; Oluwasetemi 2023
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+
+
+  <table>
+    <thead>
+      <th>Name</th>
+      <th>Game Played</th>
+      <th>Games Won</th>
+      <th>Games Lost</th>
+      <th>Games Drawn</th>
+      <th>Goals For</th>
+      <th>Goals Against</th>
+      <th>Goals Difference</th>
+      <th>Point</th>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Manchester United</th>
+        <td align="center" bgcolor="red" rowspan="3">8</td>
+        <td colspan="2">4</td>
+        <!-- <td>4</td> -->
+        <td>4</td>
+        <td>10</td>
+        <td>15</td>
+        <td>-5</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <th>Manchester City</th>
+        <td colspan="7">9</td>
+      </tr>                                
+      <tr>
+        <td>
+          others
+        </td>
+      </tr>
+      <tr>
+        <td>
+          others
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <table>
+    <colgroup>
+      <col />
+      <col span="2" class="" id="" >alphabets</colgroup>
+      <col span="2" class="" id="" >
+    </colgroup>
+    <tr>
+      <td></td>
+      <td>a</td>
+      <td>b</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>x</td>
+      <td>y</td>
+    </tr>
+  </table>
+
+  <!-- Heading and text -->
+</body>
+</html>
