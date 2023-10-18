@@ -9,6 +9,7 @@
 
   <body>
     <style>
+
       q::before,
       blockquote::before {
         content: open-quote;
@@ -20,90 +21,236 @@
       }
     </style>
 
-<header>
-  <h1>This is heading 1</h1>
+    <!-- skip navigation -->
+    <a class="visually-hidden" href="#main">Skip to main content</a>
+    <header>
+      <h1>This is heading 1</h1>
 
-  <nav>
-    <ul>
+      <!-- global navigation -->
+      <nav>
+        <ul>
 
-      <li><a href="./index2.html">Index2</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#article">Article</a></li>
-      <li><a href="#aside">Aside</a></li>
-      <li><a href="#lorem">Article</a></li>
-      <li><a href="mailto:alex@smith.com">Contact US</a></li>
-      <li><a href="tel:08051806712">Call US</a></li>
-      <li><a href="mailto:setemi@gmail.com?subject=Join%20me%21&body=You%20need%20to%20show%20your%20human%20that%20you%20can%27t%20be%20owned%21%20Sign%20up%20for%20Machine%20Learning%20workshop.%20We%20are%20taking%20over%20the%20world.%20http%3A%2F%2Fwww.machinelearning.com%23reg
+          <li><a aria-current="page" href="./index2.html">Index2</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#article">Article</a></li>
+          <li><a href="#aside">Aside</a></li>
+          <li><a href="#lorem">Article</a></li>
+          <li><a href="mailto:alex@smith.com">Contact US</a></li>
+          <li><a href="tel:08051806712">Call US</a></li>
+          <li><a href="sms:08051806712">Send US</a></li>
+          <li><a href="mailto:setemi@gmail.com?subject=Join%20me%21&body=You%20need%20to%20show%20your%20human%20that%20you%20can%27t%20be%20owned%21%20Sign%20up%20for%20Machine%20Learning%20workshop.%20We%20are%20taking%20over%20the%20world.%20http%3A%2F%2Fwww.machinelearning.com%23reg
         ">Tell a machine</a></li>
+          <li><a
+              href="whatsapp://res.cloudinary.com/drnqdd87d/image/upload/v1693414607/altschool/lc5f390mnj1ifqslmjka.png"
+              download="hfhfhfhf.png"> Download File </a>
+          </li>
+        </ul>
+      </nav>
 
-
-    </ul>
-  </nav>
-
-</header>
-    <section id="about" aria-labelledby="about_heading">
-      <h1 id="about">This is heading 1</h1>
-      <section>
-        <h1>This is heading 1 nested inside another section</h1>
+    </header>
+    <!-- blog -->
+    <nav aria-labelledby="toc">
+      <div id="toc">Table of COntent</div>
+      <div>
+        <ul>
+          <li>
+            <a href="#skip">Skip to content link</a>
+          </li>
+          <li>
+            <a href="#toc">Table of contents</a>
+          </li>
+          <li>
+            <a href="#bc">Page breadcrumbs</a>
+          </li>
+          <li>
+            <a href="#ln">Local navigation</a>
+          </li>
+          <li>
+            <a href="#global">Global navigation</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- table of content -->
+    <!-- bread crumb -->
+    <nav aria-label="breadcrumbs">
+      <ol role="list">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/learn/">Learn</a>
+        </li>
+        <li>
+          <a href="/learn/html">Learn HTML!</a>
+        </li>
+        <li aria-current="page">
+          Navigation
+        </li>
+      </ol>
+    </nav>
+    <main id="main">
+      <section id="about" aria-labelledby="about_heading">
+        <h1 id="about">This is heading 1</h1>
+        <section>
+          <h1>This is heading 1 nested inside another section</h1>
+        </section>
       </section>
-    </section>
-    <article id="article">
-      <h1>This is heading 1</h1>
-    </article>
-    <aside id="aside">
-      <h1>This is heading 1</h1>
-    </aside>
-    <h2>This is heading 2</h2>
-    <h3>This is heading 3</h3>
+      <article id="article">
+        <h1>This is heading 1</h1>
+      </article>
+      <aside id="aside">
+        <h1>This is heading 1</h1>
+      </aside>
+      <h2>This is heading 2</h2>
+      <h3>This is heading 3</h3>
 
 
-    <blockquote cite="http://olwasetemi.dev">
-      Watching video tutorials alone without practice is BS
-      <cite>- Mr Oluwasetemi TalktoMuch 2023</cite>
-    </blockquote>
+      <blockquote cite="http://olwasetemi.dev">
+        Watching video tutorials alone without practice is BS
+        <cite>- Mr Oluwasetemi TalktoMuch 2023</cite>
+      </blockquote>
 
-    <section id="lorem">
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis recusandae dolores obcaecati! Adipisci
-        laboriosam quae possimus, blanditiis sapiente quas ullam facere delectus vel unde, minima fugit sunt fugiat eius
-        at?
+      <section id="lorem">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis recusandae dolores obcaecati! Adipisci
+          laboriosam quae possimus, blanditiis sapiente quas ullam facere delectus vel unde, minima fugit sunt fugiat
+          eius
+          at?
+        </p>
+      </section>
+      <q cite="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+
+        <cite>Mr Nobody</cite>
+      </q>
+
+      <code>
+        &lt;div&gt;hdjdjdfdjkfkd&lt;/div&gt;
+        <samp>
+          x<sup>2</sup>+2x-5
+        </samp>
+        <samp>
+          x<sub>2</sub>
+        </samp>
+      </code>
+
+      <pre>
+        &lt;div&gt;hdjdjdfdjkfkd&lt;/div&gt;
+        <samp>
+          x<sup>2</sup>+2x-5
+        </samp>
+        <samp>
+          x<sub>2</sub>
+        </samp>
+
+      </pre>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, fuga maiores excepturi, eius accusantium
+        nesciunt nobis dolores corporis temporibus odit non delectus recusandae. Et vero ea ratione laudantium quod hic?
       </p>
-    </section>
-    <q cite="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-
-      <cite>Mr Nobody</cite>
-    </q>
-
-    <code>
-      &lt;div&gt;hdjdjdfdjkfkd&lt;/div&gt;
-      <samp>
-        x<sup>2</sup>+2x-5
-      </samp>
-      <samp>
-        x<sub>2</sub>
-      </samp>
-    </code>
-
-    <pre>
-      &lt;div&gt;hdjdjdfdjkfkd&lt;/div&gt;
-      <samp>
-        x<sup>2</sup>+2x-5
-      </samp>
-      <samp>
-        x<sub>2</sub>
-      </samp>
-
-    </pre>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, fuga maiores excepturi, eius accusantium nesciunt nobis dolores corporis temporibus odit non delectus recusandae. Et vero ea ratione laudantium quod hic?</p>
-
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum  dolore reprehenderit aperiam debitis tenetur, ut, eum voluptate officiis deserunt eligendi dolor omnis fugiat maxime reiciendis adipisci quisquam est? Ex, nesciunt.
 
 
 
+      <div>
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet mi eget ante sagittis placerat. Morbi
+        fermentum luctus tortor vitae condimentum. Nunc congue neque sed bibendum vehicula. Integer imperdiet, diam a
+        porta ullamcorper, augue risus tristique metus, ut lacinia massa nibh tristique ipsum. Phasellus at risus elit.
+        Aenean tincidunt lorem at neque interdum dapibus. Etiam sed suscipit sem. Nulla facilisi. Maecenas purus libero,
+        tempor eget justo nec, pretium elementum dolor.
+
+        Aliquam risus nibh, viverra sit amet tellus quis, lobortis ultricies est. Aenean ac consectetur dolor. Morbi
+        porta quam eget semper ultricies. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. Duis nibh erat, aliquet porttitor turpis non, luctus vestibulum augue. Nulla elit velit, posuere
+        a nulla quis, tincidunt gravida metus. Proin id accumsan mauris, a aliquam est. Praesent vel ullamcorper lectus,
+        quis imperdiet elit. Vivamus blandit a purus quis maximus. Suspendisse ex felis, bibendum egestas sodales sed,
+        ornare lobortis purus.
+
+        Proin elementum ligula lorem, eu sagittis velit lobortis quis. Donec lobortis bibendum nisi egestas suscipit.
+        Quisque suscipit sagittis vulputate. Curabitur condimentum, augue at mattis molestie, lectus nisi commodo
+        sapien, sit amet commodo tellus neque ut enim. In tincidunt ex nec elit pretium pellentesque. Donec consequat
+        scelerisque arcu, a egestas mauris egestas in. Donec luctus nulla ex, eget euismod felis malesuada non. Proin ex
+        nibh, fermentum a nulla id, ultrices aliquet nisl. Mauris rutrum scelerisque turpis. Maecenas egestas dui sit
+        amet metus rutrum venenatis. Sed at leo risus. Cras blandit ultricies ipsum eget luctus. Phasellus ut diam
+        posuere, sodales sem non, porta nunc.
+
+        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed at metus rhoncus,
+        pulvinar erat non, sagittis velit. Aenean ante dolor, ultrices vel nulla nec, aliquet porttitor nibh. Cras eget
+        consectetur nisi. Nulla vehicula tortor vel lectus tincidunt lacinia ac at velit. Etiam et ultrices orci.
+        Quisque a ipsum lacus. Donec sit amet imperdiet mauris, id porttitor est. In vel sem tellus. Aliquam aliquam
+        ipsum vitae dignissim accumsan.
+
+        Sed placerat metus arcu, a fringilla augue pulvinar id. Etiam finibus quis velit nec iaculis. Quisque risus
+        purus, accumsan a ante vitae, tempor scelerisque arcu. Aenean vulputate suscipit nibh, nec lobortis eros sodales
+        ut. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec non nisl
+        purus. Mauris feugiat, est nec commodo auctor, elit ligula porttitor ipsum, ultricies imperdiet turpis lorem
+        consequat augue. Maecenas mattis lectus vel varius ullamcorper. Cras ultrices nibh id consequat sagittis. Nulla
+        ac ultrices lacus.
+      </div>
+
+      <div>
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet mi eget ante sagittis placerat. Morbi
+        fermentum luctus tortor vitae condimentum. Nunc congue neque sed bibendum vehicula. Integer imperdiet, diam a
+        porta ullamcorper, augue risus tristique metus, ut lacinia massa nibh tristique ipsum. Phasellus at risus elit.
+        Aenean tincidunt lorem at neque interdum dapibus. Etiam sed suscipit sem. Nulla facilisi. Maecenas purus libero,
+        tempor eget justo nec, pretium elementum dolor.
+
+        Aliquam risus nibh, viverra sit amet tellus quis, lobortis ultricies est. Aenean ac consectetur dolor. Morbi
+        porta quam eget semper ultricies. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. Duis nibh erat, aliquet porttitor turpis non, luctus vestibulum augue. Nulla elit velit, posuere
+        a nulla quis, tincidunt gravida metus. Proin id accumsan mauris, a aliquam est. Praesent vel ullamcorper lectus,
+        quis imperdiet elit. Vivamus blandit a purus quis maximus. Suspendisse ex felis, bibendum egestas sodales sed,
+        ornare lobortis purus.
+
+        Proin elementum ligula lorem, eu sagittis velit lobortis quis. Donec lobortis bibendum nisi egestas suscipit.
+        Quisque suscipit sagittis vulputate. Curabitur condimentum, augue at mattis molestie, lectus nisi commodo
+        sapien, sit amet commodo tellus neque ut enim. In tincidunt ex nec elit pretium pellentesque. Donec consequat
+        scelerisque arcu, a egestas mauris egestas in. Donec luctus nulla ex, eget euismod felis malesuada non. Proin ex
+        nibh, fermentum a nulla id, ultrices aliquet nisl. Mauris rutrum scelerisque turpis. Maecenas egestas dui sit
+        amet metus rutrum venenatis. Sed at leo risus. Cras blandit ultricies ipsum eget luctus. Phasellus ut diam
+        posuere, sodales sem non, porta nunc.
+
+        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed at metus rhoncus,
+        pulvinar erat non, sagittis velit. Aenean ante dolor, ultrices vel nulla nec, aliquet porttitor nibh. Cras eget
+        consectetur nisi. Nulla vehicula tortor vel lectus tincidunt lacinia ac at velit. Etiam et ultrices orci.
+        Quisque a ipsum lacus. Donec sit amet imperdiet mauris, id porttitor est. In vel sem tellus. Aliquam aliquam
+        ipsum vitae dignissim accumsan.
+
+        Sed placerat metus arcu, a fringilla augue pulvinar id. Etiam finibus quis velit nec iaculis. Quisque risus
+        purus, accumsan a ante vitae, tempor scelerisque arcu. Aenean vulputate suscipit nibh, nec lobortis eros sodales
+        ut. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec non nisl
+        purus. Mauris feugiat, est nec commodo auctor, elit ligula porttitor ipsum, ultricies imperdiet turpis lorem
+        consequat augue. Maecenas mattis lectus vel varius ullamcorper. Cras ultrices nibh id consequat sagittis. Nulla
+        ac ultrices lacus.
+      </div>
 
 
-    <footer>&copy; <a title="click me to go to the top" href="#top" target="_self">Oluwasetemi</a> &lt;div/&gt; </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dolore reprehenderit aperiam debitis tenetur,
+        ut, eum voluptate officiis deserunt eligendi dolor omnis fugiat maxime reiciendis adipisci quisquam est? Ex,
+        nesciunt.</p>
+    </main>
+
+
+
+
+
+    <footer>&copy; <a title="click me to go to the top" href="#top" target="_self">Oluwasetemi</a> &lt;div/&gt;
+    </footer>
   </body>
 
 </html>
